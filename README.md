@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Text%20Editor%20in%20C%2B%2B&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Built%20from%20scratch%20%C2%B7%20Zero%20STL%20containers%20%C2%B7%20Pure%20Data%20Structures%20%26%20Algorithms&descAlignY=60&descSize=16" width="100%" alt="Text Editor in C++"/>
+<img src="banner.svg" width="100%" alt="Text Editor in C++ - built on hand-written data structures, zero STL containers"/>
 
 <br/>
 
