@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/hero.svg" width="100%" alt="Text Editor in C++ - built on hand-written data structures, zero STL containers"/>
+<img src="assets/banner.svg" width="100%" alt="Text Editor in C++ - built on hand-written data structures, zero STL containers"/>
 
 <br/>
 
