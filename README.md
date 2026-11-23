@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="banner.svg" width="100%" alt="Text Editor in C++ - built on hand-written data structures, zero STL containers"/>
+<img src="assets/banner.svg" width="100%" alt="Text Editor in C++ - built on hand-written data structures, zero STL containers"/>
 
 <br/>
 
@@ -15,18 +15,20 @@
 
 <br/>
 
-[**Features**](#-features) ·
-[**Architecture**](#-architecture) ·
-[**Algorithms**](#-algorithms) ·
-[**Shortcuts**](#-keyboard-shortcuts) ·
-[**Getting Started**](#-getting-started) ·
-[**Team**](#-the-team)
+[**Overview**](#overview) ·
+[**Features**](#features) ·
+[**Architecture**](#architecture) ·
+[**Algorithms**](#algorithms) ·
+[**Shortcuts**](#shortcuts) ·
+[**Getting Started**](#getting-started) ·
+[**Team**](#team)
 
 </div>
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## 📖 Overview
+<a id="overview"></a>
+<img src="assets/h-overview.svg" width="100%" alt="01 Overview"/>
 
 This project is our **CS-218 Data Structures and Algorithms Complex Engineering Problem** at **NED University of Engineering and Technology, Karachi**. The goal was never a flashy interface. The goal was to **choose the right data structure for every job**, implement it ourselves, and **prove with complexity analysis** why the choice is good.
 
@@ -35,17 +37,19 @@ This project is our **CS-218 Data Structures and Algorithms Complex Engineering 
 
 The editor keeps the whole document in memory and lets you create, open, edit, search, replace and save plain text, with full **Undo / Redo**, multi-line selection, and a smart search engine that can even match phrases across line breaks.
 
-<div align="center">
+<img src="assets/stats.svg" width="100%" alt="0 STL containers used, 4 custom hand-written structures, 19 algorithms (7 core and 12 supporting), 15 source modules, 9 targeted test cases"/>
 
-| 🧱 Custom structures | 🧠 Algorithms | 🧪 Test cases | 📄 Source modules |
-|:---:|:---:|:---:|:---:|
-| **4** | **7 core + 12 supporting** | **9** | **15** |
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-</div>
+<a id="features"></a>
+<img src="assets/h-features.svg" width="100%" alt="02 Features"/>
 
----
+<img src="assets/features.svg" width="100%" alt="Feature overview: Editing, Files, Search, Replace, Undo/Redo and Console UI"/>
 
-## ✨ Features
+<details>
+<summary><b>📋 Full feature list (text version)</b></summary>
+
+<br/>
 
 <table>
 <tr>
@@ -92,9 +96,23 @@ Numbered lines · vertical and horizontal scrolling · live header showing **lin
 </tr>
 </table>
 
----
+</details>
 
-## 🏗️ Architecture
+<img src="assets/divider.svg" width="100%" alt=""/>
+
+<!--
+<a id="demo"></a>
+<img src="assets/h-demo.svg" width="100%" alt="03 Live Demo"/>
+
+<div align="center">
+  <img src="assets/demo.gif" width="90%" alt="Text Editor in C++ demo"/>
+</div>
+
+<img src="assets/divider.svg" width="100%" alt=""/>
+-->
+
+<a id="architecture"></a>
+<img src="assets/h-architecture.svg" width="100%" alt="04 Architecture"/>
 
 The program is split into **15 source files, one per module**. `main.cpp` includes the rest in dependency order, so the project builds as a single unit. Each class has exactly one job.
 
@@ -205,9 +223,10 @@ flowchart LR
     H --> B
 ```
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## 🧱 Data Structures
+<a id="data-structures"></a>
+<img src="assets/h-datastructures.svg" width="100%" alt="05 Data Structures"/>
 
 Every structure was chosen for the operation that matters most.
 
@@ -271,9 +290,10 @@ When `length == capacity`, a new array of **2× capacity** (minimum 16) is alloc
 
 </details>
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## 🧠 Algorithms
+<a id="algorithms"></a>
+<img src="assets/h-algorithms.svg" width="100%" alt="06 Algorithms"/>
 
 | # | Algorithm | Where | Time |
 |:-:|---|---|---|
@@ -336,9 +356,10 @@ KMP cannot handle a space that may match a **line break plus surrounding whitesp
 
 </details>
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## ⏱️ Complexity
+<a id="complexity"></a>
+<img src="assets/h-complexity.svg" width="100%" alt="07 Complexity"/>
 
 **Symbols:** `n` lines · `L` line length · `N` total characters · `m` search length · `k` matches · `r` lines touched · `s` text size · `d` distance from cursor
 
@@ -363,9 +384,10 @@ KMP cannot handle a space that may match a **line break plus surrounding whitesp
 
 **Space:** document Θ(N) + Θ(n) nodes · undo/redo grows with the number of edits · search Θ(k) + Θ(m).
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## ⌨️ Keyboard Shortcuts
+<a id="shortcuts"></a>
+<img src="assets/h-shortcuts.svg" width="100%" alt="08 Keyboard Shortcuts"/>
 
 | Action | Key |
 |---|---|
@@ -384,9 +406,10 @@ KMP cannot handle a space that may match a **line break plus surrounding whitesp
 | Move cursor | `Arrow keys` · `Home` · `End` |
 | Back to menu | `Esc` |
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## 🚀 Getting Started
+<a id="getting-started"></a>
+<img src="assets/h-start.svg" width="100%" alt="09 Getting Started"/>
 
 ### Requirements
 - **Windows** (uses `conio.h` and `windows.h`)
@@ -397,7 +420,7 @@ KMP cannot handle a space that may match a **line break plus surrounding whitesp
 
 ```bash
 # 1. Clone
-git clone https://github.com/<your-username>/<your-repo>.git
+git clone https://github.com/AtaifaFaisal87/<your-repo>.git
 cd <your-repo>
 
 # 2. Compile (main.cpp includes every module, so it builds as one unit)
@@ -415,9 +438,10 @@ g++ -std=c++17 -O2 main.cpp -o TextEditor.exe
 2. Type, use arrow keys to move, `Shift` + arrows to select.
 3. `Ctrl` + `S` to save. Files are stored in `TextEditorFiles/`.
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## 🛡️ Error Handling
+<a id="error-handling"></a>
+<img src="assets/h-errors.svg" width="100%" alt="10 Error Handling"/>
 
 The editor reports bad input instead of crashing.
 
@@ -438,9 +462,10 @@ The editor reports bad input instead of crashing.
 
 **Memory rules:** every class that calls `new[]` frees it in its destructor. `TextBuffer` and `DynamicArray` implement **deep-copy** constructors and `operator=`. `Document` and `TextEditor` are **non-copyable** (`= delete`) to prevent double-free.
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## 🧪 Testing
+<a id="testing"></a>
+<img src="assets/h-testing.svg" width="100%" alt="11 Testing"/>
 
 Nine targeted test cases, each aimed at a feature that is hard to get right.
 
@@ -456,9 +481,10 @@ Nine targeted test cases, each aimed at a feature that is hard to get right.
 | **T8** | Long-line scrolling | 467-character line scrolls horizontally with nothing lost |
 | **T9** | Large document | **2,517-line** file opens, scrolls to the end, finds the last line |
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## 🚧 Limitations & Roadmap
+<a id="roadmap"></a>
+<img src="assets/h-roadmap.svg" width="100%" alt="12 Roadmap"/>
 
 - [ ] **Cross-platform input/rendering** layer (currently Windows only)
 - [ ] **Linear-time phrase search** using Shift-And or a DFA instead of brute force
@@ -470,52 +496,24 @@ Nine targeted test cases, each aimed at a feature that is hard to get right.
 - [ ] Tab and non-ASCII character support
 - [ ] Go-to-line, Page Up / Page Down, whole-word and case-sensitive search options
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## 👥 The Team
+<a id="team"></a>
+<img src="assets/h-team.svg" width="100%" alt="13 The Team"/>
 
 <div align="center">
 
 **Department of Computer and Information Systems Engineering**
 **NED University of Engineering and Technology, Karachi · CS-218 · Fall Semester 2026**
 
-</div>
-
-<table>
-<tr>
-<td align="center" width="25%">
-<h3>Yazdaan Ali Mirza</h3>
-<b>🔍 String Matching & Search / Replace Engine</b><br/><br/>
-<sub>KMP algorithm and LPS construction, case-insensitive, overlapping and multi-line search, match navigation, single and bulk replacement.</sub>
-</td>
-<td align="center" width="25%">
-<h3>Ataifa Faisal</h3>
-<b>↩️ Stack Architecture & Undo / Redo System</b><br/><br/>
-<sub>Templated <code>Stack</code>, two-stack undo/redo, <code>Action</code> and <code>LineChange</code> structures, action grouping and state restoration.</sub>
-</td>
-<td align="center" width="25%">
-<h3>Abdur Rehman</h3>
-<b>📄 Document Structure & Editing Engine</b><br/><br/>
-<sub>Doubly-linked-list document, node management, cursor positioning, insertion and deletion, line split/join, selection handling.</sub>
-</td>
-<td align="center" width="25%">
-<h3>Hafsa Shakeel</h3>
-<b>💾 Text Storage & File Management</b><br/><br/>
-<sub><code>TextBuffer</code>, templated <code>DynamicArray</code>, <code>FileManager</code>, dynamic memory, resizing, deep copying and file operations.</sub>
-</td>
-</tr>
-</table>
-
-<div align="center">
-
-🤝 **All members** collaborated on system integration, debugging, compatibility fixes and quality assurance of the complete editor.
+<img src="assets/team.svg" width="100%" alt="Team: Yazdaan Ali Mirza (string matching and search/replace engine), Ataifa Faisal (stack architecture and undo/redo system), Abdur Rehman (document structure and editing engine), Hafsa Shakeel (text storage and file management). All members collaborated on integration, debugging, compatibility fixes and quality assurance."/>
 
 </div>
 
+<img src="assets/divider.svg" width="100%" alt=""/>
 
----
-
-## 📜 License
+<a id="license"></a>
+<img src="assets/h-license.svg" width="100%" alt="14 License"/>
 
 This project is licensed under the **MIT License**.
 
@@ -548,12 +546,10 @@ SOFTWARE.
 
 </details>
 
+<img src="assets/divider.svg" width="100%" alt=""/>
+
 <div align="center">
 
-<br/>
-
 **Built with ☕, pointers, and a refusal to `#include <vector>`.**
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer" width="100%" alt=""/>
 
 </div>
